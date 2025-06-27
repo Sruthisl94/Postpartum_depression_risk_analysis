@@ -7,7 +7,7 @@ Original file is located at
     https://colab.research.google.com/drive/1y8-1w7T4q10Jv0GAkrZ0xTe87SD_TdM7
 """
 
-pip install streamlit
+
 
 import streamlit as st
 import numpy as np
@@ -15,7 +15,7 @@ import joblib
 import matplotlib.pyplot as plt
 
 # Load trained model and label encoder
-model = joblib.load('ffnn_model.pkl')
+model = joblib.load('ppd_model_pipeline.pkl')
 le = joblib.load('label_encoder.pkl')
 
 st.title("Postpartum Depression Risk Predictor")
