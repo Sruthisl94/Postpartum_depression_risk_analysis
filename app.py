@@ -123,7 +123,7 @@ input_data = pd.DataFrame([{
 }])
 
 prediction_encoded = model.predict(input_data)[0]
-prediction_label = label_encoder.inverse_transform([prediction_encoded])[0]
+prediction_label = le.inverse_transform([prediction_encoded])[0]
 
 st.success(f" Predicted Postpartum Depression Risk: **{prediction_label}**")
 
