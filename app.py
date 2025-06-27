@@ -118,8 +118,7 @@ input_data = pd.DataFrame([{
     "Q8": q8_val,
     "Q9": q9_val,
     "Q10": q10_val,
-    "EPDS_Score" :score,
-    "FamilySupport": FamilySupport
+    "EPDS_Score" :score
 }])
 
 prediction_encoded = model.predict(input_data)[0]
