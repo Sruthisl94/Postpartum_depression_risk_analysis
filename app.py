@@ -12,6 +12,7 @@ Original file is located at
 import streamlit as st
 import numpy as np
 import joblib
+import pandas as pd
 import matplotlib.pyplot as plt
 
 # Load trained model and label encoder
