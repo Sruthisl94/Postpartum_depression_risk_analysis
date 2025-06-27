@@ -103,7 +103,7 @@ q7_val = Q7_response[Q7]
 q8_val = Q8_response[Q8]
 q9_val = Q9_response[Q9]
 q10_val = Q10_response[Q10]
-
+score=q1_val+q2_val+q3_val+q4_val+q5val+q6_val+q7_val+q8_val+q9_val+q10_val
 
 input_data = pd.DataFrame([{
     "Age": Age,
@@ -118,6 +118,8 @@ input_data = pd.DataFrame([{
     "Q8": q8_val,
     "Q9": q9_val,
     "Q10": q10_val,
+    "EPDS_Score" :score,
+    "FamilySupport": FamilySupport
 }])
 
 prediction_encoded = model.predict(input_data)[0]
